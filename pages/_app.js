@@ -1,3 +1,5 @@
+// This file is the main entry point into the app
+
 import { useEffect } from "react";
 import AOS from "aos";
 

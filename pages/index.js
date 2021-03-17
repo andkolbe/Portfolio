@@ -4,7 +4,7 @@ import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiOutlineMail } from 're
 import { SiBootstrap, SiMysql, SiTypescript } from 'react-icons/si';
 import { FaReact, FaNodeJs } from 'react-icons/fa';
 
-const Home = () => {
+export default Home = () => {
   return (
 
     <main>
@@ -144,6 +144,7 @@ const Home = () => {
                 <div className='text-lg'>Authentication via Passport</div>
                 <div className='text-lg'>3rd Party API integration with Stripe, Mailgun, and Yelp Fusion</div>
                 <div className='text-lg'>Deployed with Heroku</div>
+                <div className='text-lg'>Intregrated my own password reset workflow</div>
                 <div className='flex text-2xl my-8 font-bold justify-center'>
                   <a target='_blank' href='' className='mr-20'>View Site</a>
                   <a target='_blank' href='https://github.com/andkolbe/get-the-dish' className='mr-20'>View Source Code</a>
@@ -210,4 +211,3 @@ const Home = () => {
   );
 }
 
-export default Home;
