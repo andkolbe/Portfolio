@@ -7,7 +7,7 @@ import { FaReact, FaNodeJs } from 'react-icons/fa';
 export default function Home() {
   return (
 
-    <main>
+    <main className="absolute md:relative">
 
       <Head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" />
@@ -25,7 +25,6 @@ export default function Home() {
         </div>
       </nav>
 
-
       {/* Hero */}
       <div className='relative flex items-center content-center justify-center pt-16 pb-32'
         style={{
@@ -36,7 +35,7 @@ export default function Home() {
           <div className='flex flex-wrap items-center'>
             <div className='w-full px-4 ml-auto mr-auto text-center lg:w-6/12'>
               <div data-aos='fade-in'>
-                <h1 className='font-semibold text-gray-100 text-8xl'>
+                <h1 className='font-semibold text-gray-100 text-6xl lg:text-8xl'>
                   Andrew Kolbe
                     </h1>
                 <p className='mt-4 text-gray-300 text-2xl'>
@@ -46,9 +45,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* Black Polygon */}
+        {/* Polygon */}
         <div
-          className='absolute bottom-0 left-0 right-0 top-auto w-full overflow-hidden pointer-events-none'
+          className='absolute bottom-0 left-0 right-0 top-auto w-full -mt-20 overflow-hidden pointer-events-none'
           style={{ height: '80px', transform: 'translateZ(0)' }}
         >
           <svg
@@ -74,7 +73,7 @@ export default function Home() {
           <div className='flex flex-wrap'></div>
           <div className='flex flex-wrap items-center mt-32'>
             <div className='w-full px-4 ml-auto mr-auto md:w-5/12' data-aos='fade-right'>
-              <h2 className='mb-2 text-4xl font-semibold leading-normal'>
+              <h2 className='my-6 md:my-2 text-4xl font-semibold leading-normal text-center md:text-left'>
                 About Me
                 </h2>
               <p className='mt-4 mb-4 text-lg leading-relaxed text-gray-900'>
@@ -84,14 +83,14 @@ export default function Home() {
                 I have years of experience working in high stress, team focused, and technically challenging environments. I love growing with and learning from a team, and helping other motivated people reach their potential.
                 </p>
               <p className='mt-0 mb-4 text-lg leading-relaxed text-gray-900'>
-                In my free time, I enjoy cooking and learning about new cuisines and cultures, watching Houston and University of Texas sports, hiking, and spending time with my lazy dog
+                In my free time, I enjoy cooking and learning about new cuisines and cultures, watching Houston and University of Texas sports, and spending time with my lazy dog
                 </p>
-              <p className='mt-0 mb-4 text-lg leading-relaxed text-gray-900'>
-                Link Resume
+              <p className='mt-0 mb-4 text-lg text-center md:text-left leading-relaxed font-bold text-gray-900'>
+                View Resume
                 </p>
             </div>
             {/* My Picture */}
-            <div className='px-4 ml-auto mr-auto md:w-1/3' data-aos='fade-left'>
+            <div className='px-4 pt-4 ml-auto mr-auto xl:w-1/3 lg:w-2/5 w-2/3' data-aos='fade-left'>
               <img
                 alt='...'
                 src='https://get-the-dish.s3.amazonaws.com/1612647627489.jpg'
@@ -129,7 +128,7 @@ export default function Home() {
         {/* Content */}
         <div className='container px-4 mx-auto' data-aos='fade-down'>
           <div className='flex flex-wrap items-center'>
-            <div className='lg:w-3/5 px-4 ml-auto mr-auto md:pr-12'>
+            <div className='lg:w-3/5 md:px-4 px-2 ml-auto mr-auto md:pr-12'>
               <h2 className='text-4xl font-semibold mb-20 text-center'>Projects</h2>
               {/* Get The Dish */}
               <div>
@@ -151,9 +150,9 @@ export default function Home() {
                 <div className='text-lg'>Integrated my own password reset workflow</div>
                 <div className='text-lg'>3rd Party API integration with Stripe, Mailgun, and Yelp Fusion</div>
                 <div className='text-lg'>Deployed with Heroku</div>
-                <div className='flex text-2xl my-8 font-bold justify-center'>
+                <div className='flex flex-col md:flex-row text-2xl my-8 font-bold justify-center'>
                   <a target='_blank' href='' className='mr-20'>View Site</a>
-                  <a target='_blank' href='https://github.com/andkolbe/get-the-dish' className='mr-20'>View Source Code</a>
+                  <a target='_blank' href='https://github.com/andkolbe/get-the-dish' className='my-4 md:my-0 mr-20'>View Source Code</a>
                   <a target='_blank' href=''>View Screen Shots</a>
                 </div>
                 {/* <div className='flex ml-auto mr-auto'>
@@ -191,8 +190,10 @@ export default function Home() {
           </svg>
         </div>
 
+        
+
         {/* Content */}
-        <div className='container px-4 pt-10 mx-auto lg:pt-14 lg:pb-10'>
+        <div className='container px-4 py-10 mx-auto lg:pt-14'>
           <div className='flex flex-wrap justify-center text-center' >
             <div className='w-full px-4 lg:w-7/12'>
               <h2 className='text-4xl font-semibold text-gray-100'>
