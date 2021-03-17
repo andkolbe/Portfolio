@@ -1,6 +1,6 @@
 import Head from 'next/head'; // Head is a React Component that is built into Next.js. It allows you to modify the <head> of a page.
 import * as React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 import { SiBootstrap, SiMysql, SiTypescript } from 'react-icons/si';
 import { FaReact, FaNodeJs } from 'react-icons/fa';
 
@@ -78,10 +78,10 @@ export default function Home() {
                 About Me
                 </h2>
               <p className='mt-4 mb-4 text-lg font-light leading-relaxed text-gray-700'>
-                Dummy Text
+                Hello!, I'm Andrew, a pastry chef turned web developer from Texas who recently moved to Birmingham. 
                 </p>
               <p className='mt-0 mb-4 text-lg font-light leading-relaxed text-gray-700'>
-                More Dummy Text
+                I have years of experience working in high stress, team focused, and techincally challenging environments. I enjoy growing with and learning from a team, and helping other motivated people reach their potential.
                 </p>
             </div>
             {/* My Picture */}
@@ -142,9 +142,9 @@ export default function Home() {
                 <div className='text-lg'>Images are hosted using AWS</div>
                 <div className='text-lg'>Comments are updated real time with Socket.IO</div>
                 <div className='text-lg'>Authentication via Passport</div>
+                <div className='text-lg'>Integrated my own password reset workflow</div>
                 <div className='text-lg'>3rd Party API integration with Stripe, Mailgun, and Yelp Fusion</div>
                 <div className='text-lg'>Deployed with Heroku</div>
-                <div className='text-lg'>Intregrated my own password reset workflow</div>
                 <div className='flex text-2xl my-8 font-bold justify-center'>
                   <a target='_blank' href='' className='mr-20'>View Site</a>
                   <a target='_blank' href='https://github.com/andkolbe/get-the-dish' className='mr-20'>View Source Code</a>
