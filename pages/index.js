@@ -4,7 +4,7 @@ import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiOutlineMail } from 're
 import { SiBootstrap, SiMysql, SiTypescript } from 'react-icons/si';
 import { FaReact, FaNodeJs } from 'react-icons/fa';
 
-export default Home = () => {
+export default function Home() {
   return (
 
     <main>

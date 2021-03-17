@@ -7,6 +7,8 @@ import "aos/dist/aos.css";
 
 import '../styles/globals.css'
 
+
+
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     AOS.init({
