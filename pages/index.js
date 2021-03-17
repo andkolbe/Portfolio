@@ -18,9 +18,9 @@ export default function Home() {
         <div className="container flex flex-wrap items-center justify-between px-4 mx-auto">
           {/* <!-- Social Media Icons --> */}
           <div className="flex text-3xl text-gray-100 md:ml-auto">
-            <a target='_blank' href='https://www.linkedin.com/in/andrew-kolbe-8a669b6b/' className='mx-2'><AiFillLinkedin/></a>
-            <a target='_blank' href='https://github.com/andkolbe' className='mx-2'><AiFillGithub/></a>
-            <a target='_blank' href='mailto:kolbe1129@gmail.com' className='mx-2'><AiOutlineMail/></a>
+            <a target='_blank' href='https://www.linkedin.com/in/andrew-kolbe-8a669b6b/' className='mx-2'><AiFillLinkedin /></a>
+            <a target='_blank' href='https://github.com/andkolbe' className='mx-2'><AiFillGithub /></a>
+            <a target='_blank' href='mailto:kolbe1129@gmail.com' className='mx-2'><AiOutlineMail /></a>
           </div>
         </div>
       </nav>
@@ -77,11 +77,17 @@ export default function Home() {
               <h2 className='mb-2 text-4xl font-semibold leading-normal'>
                 About Me
                 </h2>
-              <p className='mt-4 mb-4 text-lg font-light leading-relaxed text-gray-700'>
-                Hello!, I'm Andrew, a pastry chef turned web developer from Texas who recently moved to Birmingham. 
+              <p className='mt-4 mb-4 text-lg leading-relaxed text-gray-900'>
+                Hello!, I'm Andrew, a pastry chef turned web developer from Texas who recently moved to Birmingham.
                 </p>
-              <p className='mt-0 mb-4 text-lg font-light leading-relaxed text-gray-700'>
-                I have years of experience working in high stress, team focused, and techincally challenging environments. I enjoy growing with and learning from a team, and helping other motivated people reach their potential.
+              <p className='mt-0 mb-4 text-lg leading-relaxed text-gray-900'>
+                I have years of experience working in high stress, team focused, and technically challenging environments. I love growing with and learning from a team, and helping other motivated people reach their potential.
+                </p>
+              <p className='mt-0 mb-4 text-lg leading-relaxed text-gray-900'>
+                In my free time, I enjoy cooking and learning about new cuisines and cultures, watching Houston and University of Texas sports, hiking, and spending time with my lazy dog
+                </p>
+              <p className='mt-0 mb-4 text-lg leading-relaxed text-gray-900'>
+                Link Resume
                 </p>
             </div>
             {/* My Picture */}
@@ -206,7 +212,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
+
     </main>
   );
 }
