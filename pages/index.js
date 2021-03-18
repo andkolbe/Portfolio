@@ -1,5 +1,4 @@
 import Head from 'next/head'; // Head is a React Component that is built into Next.js. It allows you to modify the <head> of a page.
-import DishImages from '../components/DishImages';
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 import { SiBootstrap, SiMysql, SiTypescript } from 'react-icons/si';
 import { FaReact, FaNodeJs } from 'react-icons/fa';
@@ -8,12 +7,16 @@ import { SRLWrapper } from "simple-react-lightbox";
 
 export default function Home() {
   return (
-
     <SimpleReactLightbox>
       <main className="absolute md:relative">
 
         <Head>
+          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+          <link rel="manifest" href="/site.webmanifest" />
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" />
+
         </Head>
 
         {/* Nav */}
@@ -154,7 +157,7 @@ export default function Home() {
                   <div className='text-lg'>3rd Party API integration with Stripe, Mailgun, and Yelp Fusion</div>
                   <div className='text-lg'>Deployed with Heroku</div>
                   <div className='flex flex-col md:flex-row text-2xl my-8 font-bold justify-center'>
-                    <a target='_blank' href='' className='mr-20'>View Site</a>
+                    <a target='_blank' href='https://get-the-dish.herokuapp.com/' className='mr-20'>View Site</a>
                     <a target='_blank' href='https://github.com/andkolbe/get-the-dish' className='my-4 md:my-0'>View Source Code</a>
                   </div>
                   <SRLWrapper>
