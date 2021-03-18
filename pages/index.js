@@ -1,5 +1,5 @@
 import Head from 'next/head'; // Head is a React Component that is built into Next.js. It allows you to modify the <head> of a page.
-import * as React from 'react';
+import DishImages from '../components/DishImages';
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 import { SiBootstrap, SiMysql, SiTypescript } from 'react-icons/si';
 import { FaReact, FaNodeJs } from 'react-icons/fa';
@@ -18,7 +18,7 @@ export default function Home() {
         <div className="container flex flex-wrap items-center justify-between px-4 mx-auto">
           {/* <!-- Social Media Icons --> */}
           <div className="flex text-3xl text-gray-100 md:ml-auto">
-            <a target='_blank' href='https://www.linkedin.com/in/andrew-kolbe-8a669b6b/' className='mx-2'><AiFillLinkedin /></a>
+            <a target='_blank' href='https://www.linkedin.com/in/andrewkolbe/' className='mx-2'><AiFillLinkedin /></a>
             <a target='_blank' href='https://github.com/andkolbe' className='mx-2'><AiFillGithub /></a>
             <a target='_blank' href='mailto:kolbe1129@gmail.com' className='mx-2'><AiOutlineMail /></a>
           </div>
@@ -77,13 +77,13 @@ export default function Home() {
                 About Me
                 </h2>
               <p className='mt-4 mb-4 text-lg leading-relaxed text-gray-900'>
-                Hello!, I'm Andrew, a pastry chef turned web developer from Texas who recently moved to Birmingham.
+                Hello! I'm Andrew, a pastry chef turned web developer from Texas who recently moved to Birmingham.
                 </p>
               <p className='mt-0 mb-4 text-lg leading-relaxed text-gray-900'>
-                I have years of experience working in high stress, team focused, and technically challenging environments. I love growing with and learning from a team, and helping other motivated people reach their potential.
+                I have years of experience working in high stress, team focused, and technically challenging environments. I love growing with and learning from a team and helping other motivated people reach their potential.
                 </p>
               <p className='mt-0 mb-4 text-lg leading-relaxed text-gray-900'>
-                In my free time, I enjoy cooking and learning about new cuisines and cultures, watching Houston and University of Texas sports, and spending time with my lazy dog
+                In my free time, I enjoy cooking and learning about new cuisines and cultures, listening to obscure metal, and spending time with my lazy dog.
                 </p>
               <p className='mt-0 mb-4 text-lg text-center md:text-left leading-relaxed font-bold text-gray-900'>
                 View Resume
@@ -153,7 +153,7 @@ export default function Home() {
                 <div className='flex flex-col md:flex-row text-2xl my-8 font-bold justify-center'>
                   <a target='_blank' href='' className='mr-20'>View Site</a>
                   <a target='_blank' href='https://github.com/andkolbe/get-the-dish' className='my-4 md:my-0 mr-20'>View Source Code</a>
-                  <a target='_blank' href=''>View Screen Shots</a>
+                  <DishImages />
                 </div>
                 {/* <div className='flex ml-auto mr-auto'>
                   <img className='flex w-1/2 ml-auto mr-5' src="https://ak-portfolio.s3.amazonaws.com/Register+Page.png" alt="" />
@@ -207,7 +207,7 @@ export default function Home() {
             </div>
           </div>
           <div className='flex justify-center mt-6 text-6xl text-gray-100'>
-            <a target='_blank' href='https://www.linkedin.com/in/andrew-kolbe-8a669b6b/' className='mx-5'><AiFillLinkedin /></a>
+            <a target='_blank' href='https://www.linkedin.com/in/andrewkolbe/' className='mx-5'><AiFillLinkedin /></a>
             <a target='_blank' href='https://github.com/andkolbe' className='mx-5'><AiFillGithub /></a>
             <a target='_blank' href='mailto:kolbe1129@gmail.com' className='mx-5'><AiOutlineMail /></a>
           </div>
