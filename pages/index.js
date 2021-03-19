@@ -44,7 +44,7 @@ export default function Home() {
                   <h1 className='font-semibold text-gray-100 text-6xl lg:text-8xl'>
                     Andrew Kolbe
               </h1>
-                  <p className='mt-4 text-gray-300 text-2xl'>
+                  <p className='mt-4 text-gray-100 text-2xl'>
                     Web Developer | Birmingham, AL
               </p>
                 </div>
@@ -132,7 +132,7 @@ export default function Home() {
           </div>
 
           {/* Content */}
-          <div className='container px-4 mx-auto' data-aos='fade-down'>
+          <div className='container px-4 mx-auto md:mb-10' data-aos='fade-down'>
             <div className='flex flex-wrap items-center'>
               <div className='lg:w-3/5 md:px-4 px-2 ml-auto mr-auto md:pr-12'>
                 <h2 className='text-4xl font-semibold mb-20 text-center'>Projects</h2>
@@ -156,17 +156,17 @@ export default function Home() {
                   <div className='text-lg'>Integrated my own password reset workflow</div>
                   <div className='text-lg'>3rd Party API integration with Stripe, Mailgun, and Yelp Fusion</div>
                   <div className='text-lg'>Deployed with Heroku</div>
-                  <div className='flex flex-col md:flex-row text-2xl my-8 font-bold justify-center'>
+                  <SRLWrapper>
+                    <div className='md:flex mt-6'>
+                      <img role='button' className=' md:w-1/3 w-2/3 mb-10 md:mr-5 object-contain' src="/Register-Page.png" alt="" />
+                      <img role='button' className=' md:w-1/3 w-2/3 mb-10 md:mr-5 h-auto' src="/New-Dish-Page-(3).png" alt="" />
+                      <img role='button' className=' md:w-1/3 w-2/3 object-contain' src="/Smores.png" alt="" />
+                    </div>
+                  </SRLWrapper>
+                  <div className='flex flex-col md:flex-row text-2xl my-12 font-bold justify-center'>
                     <a target='_blank' href='https://get-the-dish.herokuapp.com/' className='mr-20'>View Site</a>
                     <a target='_blank' href='https://github.com/andkolbe/get-the-dish' className='my-4 md:my-0'>View Source Code</a>
                   </div>
-                  <SRLWrapper>
-                    <div className='md:flex'>
-                      <img role='button' className=' w-1/3 mr-5 object-contain' src="/Register-Page.png" alt="" />
-                      <img role='button' className=' w-1/3 h-auto' src="/New-Dish-Page-(3).png" alt="" />
-                      <img role='button' className=' w-1/3 mr-5 object-contain' src="/Smores.png" alt="" />
-                    </div>
-                  </SRLWrapper>
                 </div>
               </div>
             </div>
