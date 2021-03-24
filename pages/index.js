@@ -11,6 +11,7 @@ export default function Home() {
       <main className="absolute md:relative">
 
         <Head>
+          <meta name="description" content="Portfolio" />
           <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -166,6 +167,7 @@ export default function Home() {
                   <div className='flex flex-col md:flex-row text-2xl my-12 font-bold justify-center'>
                     <a target='_blank' href='https://get-the-dish.herokuapp.com/' className='mr-20'>View Site</a>
                     <a target='_blank' href='https://github.com/andkolbe/get-the-dish' className='my-4 md:my-0'>View Source Code</a>
+                    <a target='_blank' href='' className='my-4 md:my-0'>Design Document</a>
                   </div>
                 </div>
               </div>
