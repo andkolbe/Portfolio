@@ -44,7 +44,7 @@ export default function Home() {
                 <div data-aos='fade-in'>
                   <h1 className='font-semibold text-gray-100 text-6xl lg:text-8xl'>
                     Andrew Kolbe
-              </h1>
+                  </h1>
                   <p className='mt-4 text-gray-100 text-2xl'>
                     Web Developer | Birmingham, AL
               </p>
@@ -75,7 +75,7 @@ export default function Home() {
         </div>
 
         {/* About Me */}
-        <section className='pb-20 -mt-24 bg-gray-300'>
+        <section className='pb-20 -mt-20 bg-gray-300'>
           <div className='container px-4 mx-auto' >
             <div className='flex flex-wrap'></div>
             <div className='flex flex-wrap items-center mt-32'>
@@ -85,6 +85,9 @@ export default function Home() {
           </h2>
                 <p className='mt-4 mb-4 text-lg leading-relaxed text-gray-900'>
                   Hello! I'm Andrew, a pastry chef turned web developer from Texas who recently moved to Birmingham.
+          </p>
+                <p className='mt-4 mb-4 text-lg leading-relaxed text-gray-900'>
+                  I specialize in full stack Javascript development and am interested in learning more about all things server side development.
           </p>
                 <p className='mt-0 mb-4 text-lg leading-relaxed text-gray-900'>
                   I have years of experience working in high stress, team focused, and technically challenging environments. I love growing with and learning from a team and helping other motivated people reach their potential.
@@ -106,7 +109,34 @@ export default function Home() {
               </div>
             </div>
           </div>
+          {/* Skills */}
+          <div className='container px-4 mx-auto mt-16' data-aos='fade-up'>
+            <div className='flex flex-wrap items-center'>
+              <div className='lg:w-3/5 md:px-4 px-2 ml-auto mr-auto md:pr-12'>
+                <h2 className='text-lg font-semibold mb-2 text-center'>Tech I Am Currently Using</h2>
+                <div className='flex justify-center text-xl mb-10'>
+                  <h6 className='mx-3'>Javascript</h6>
+                  <h6 className='mx-3'>Typescript</h6>
+                  <h6 className='mx-3'>NodeJS</h6>
+                  <h6 className='mx-3'>Express</h6>
+                  <h6 className='mx-3'>MySQL</h6>
+                  <h6 className='mx-3'>React</h6>
+                </div>
+                <h2 className='text-lg font-semibold mb-2 text-center'>Tech I Am Interested In Learning</h2>
+                <div className='flex justify-center text-xl mb-12'>
+                  <h6 className='mx-3'>MongoDB</h6>
+                  <h6 className='mx-3'>PostgreSQL</h6>
+                  <h6 className='mx-3'>Redis</h6>
+                  <h6 className='mx-3'>Go</h6>
+                  <h6 className='mx-3'>NextJS</h6>
+                  <h6 className='mx-3'>Mocha/Chai</h6>
+                </div>
+
+              </div>
+            </div>
+          </div>
         </section>
+
 
         {/* Projects */}
         <section className='relative py-20 bg-gray-100'>
@@ -133,6 +163,7 @@ export default function Home() {
           </div>
 
           {/* Content */}
+
           <div className='container px-4 mx-auto md:mb-10' data-aos='fade-down'>
             <div className='flex flex-wrap items-center'>
               <div className='lg:w-3/5 md:px-4 px-2 ml-auto mr-auto md:pr-12'>
@@ -159,15 +190,15 @@ export default function Home() {
                   <div className='text-lg'>Deployed with Heroku</div>
                   <SRLWrapper>
                     <div className='md:flex mt-6'>
-                      <img role='button' className=' md:w-1/3 w-2/3 mb-10 md:mr-5 object-contain' src="/Register-Page.png" alt="" />
-                      <img role='button' className=' md:w-1/3 w-2/3 mb-10 md:mr-5 h-auto' src="/New-Dish-Page-(3).png" alt="" />
-                      <img role='button' className=' md:w-1/3 w-2/3 object-contain' src="/Smores.png" alt="" />
+                      <img role='button' className=' md:w-1/3 w-2/3 mb-10 md:mr-5 object-contain' src="/Register-Page.png" />
+                      <img role='button' className=' md:w-1/3 w-2/3 mb-10 md:mr-5 h-auto' src="/New-Dish-Page-(3).png" />
+                      <img role='button' className=' md:w-1/3 w-2/3 object-contain' src="/Smores.png" />
                     </div>
                   </SRLWrapper>
                   <div className='flex flex-col md:flex-row text-2xl my-12 font-bold justify-center'>
                     <a target='_blank' href='https://get-the-dish.herokuapp.com/' className='mr-20'>View Site</a>
-                    <a target='_blank' href='https://github.com/andkolbe/get-the-dish' className='my-4 md:my-0'>View Source Code</a>
-                    <a target='_blank' href='' className='my-4 md:my-0'>Design Document</a>
+                    <a target='_blank' href='https://github.com/andkolbe/get-the-dish' className='my-4 md:my-0 mr-20'>View Source Code</a>
+                    <a target='_blank' href='' className='md:my-0'>Design Document</a>
                   </div>
                 </div>
               </div>
@@ -222,6 +253,13 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* Nav */}
+
+
+        <div className='text-center bg-black py-4'>
+          <p className='text-gray-100'>Written in NextJS and Tailwind<a className='font-bold pl-10' target='_blank' href='https://github.com/andkolbe/Portfolio'> View Source Code </a></p>
+        </div>
+
 
       </main>
     </SimpleReactLightbox>
