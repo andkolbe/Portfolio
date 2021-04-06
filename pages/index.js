@@ -1,6 +1,6 @@
 import Head from 'next/head'; // Head is a React Component that is built into Next.js. It allows you to modify the <head> of a page.
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
-import { SiBootstrap, SiMysql, SiTypescript } from 'react-icons/si';
+import { SiBootstrap, SiMongodb, SiMysql, SiRedis, SiTypescript } from 'react-icons/si';
 import { FaReact, FaNodeJs } from 'react-icons/fa';
 import SimpleReactLightbox from "simple-react-lightbox";
 import { SRLWrapper } from "simple-react-lightbox";
@@ -120,16 +120,16 @@ export default function Home() {
                   <h6 className='mx-3'>NodeJS</h6>
                   <h6 className='mx-3'>Express</h6>
                   <h6 className='mx-3'>MySQL</h6>
+                  <h6 className='mx-3'>MongoDB</h6>
                   <h6 className='mx-3'>React</h6>
                 </div>
                 <h2 className='text-lg font-semibold mb-2 text-center'>Tech I Am Interested In Learning</h2>
                 <div className='flex justify-center text-xl mb-12'>
-                  <h6 className='mx-3'>MongoDB</h6>
                   <h6 className='mx-3'>PostgreSQL</h6>
                   <h6 className='mx-3'>Redis</h6>
                   <h6 className='mx-3'>Go</h6>
                   <h6 className='mx-3'>NextJS</h6>
-                  <h6 className='mx-3'>Mocha/Chai</h6>
+                  <h6 className='mx-3'>JS Testing</h6>
                 </div>
 
               </div>
@@ -164,12 +164,12 @@ export default function Home() {
 
           {/* Content */}
 
-          <div className='container px-4 mx-auto md:mb-10' data-aos='fade-down'>
+          <div className='container px-4 mx-auto md:mb-10'>
             <div className='flex flex-wrap items-center'>
               <div className='lg:w-3/5 md:px-4 px-2 ml-auto mr-auto md:pr-12'>
-                <h2 className='text-4xl font-semibold mb-20 text-center'>Projects</h2>
+                <h2 className='text-4xl font-semibold mb-20 text-center' data-aos='fade-left'>Projects</h2>
                 {/* Get The Dish */}
-                <div>
+                <div data-aos='fade-left'>
                   <h4 className='text-3xl text-gray-700 text-left'>Get The Dish</h4>
                   <hr className='border-black mt-2 mb-4 w-1/4' />
                   <h6 className='text-md'>A social networking service that allows users to create a profile, upload photos and restaurant information, and post about their favorite dishes they've eaten recently. Users can leave likes and comments on other users' dishes.</h6>
@@ -185,7 +185,7 @@ export default function Home() {
                   <div className='text-lg'>Images are hosted using AWS</div>
                   <div className='text-lg'>Comments are updated real time with Socket.IO</div>
                   <div className='text-lg'>Authentication via Passport</div>
-                  <div className='text-lg'>Integrated my own password reset workflow</div>
+                  <div className='text-lg'>Integrated a custom password reset workflow</div>
                   <div className='text-lg'>3rd Party API integration with Stripe, Mailgun, and Yelp Fusion</div>
                   <div className='text-lg'>Deployed with Heroku</div>
                   <SRLWrapper>
@@ -198,6 +198,38 @@ export default function Home() {
                   <div className='flex flex-col md:flex-row text-2xl my-12 font-bold justify-center'>
                     <a target='_blank' href='https://get-the-dish.herokuapp.com/' className='mr-20'>View Site</a>
                     <a target='_blank' href='https://github.com/andkolbe/get-the-dish' className='my-4 md:my-0 mr-20'>View Source Code</a>
+                    <a target='_blank' href='' className='md:my-0'>Design Document</a>
+                  </div>
+                </div>
+                {/* NEED A DIVIDER HERE */}
+                {/* Chirper */}
+                <div data-aos='fade-right'>
+                  <h4 className='text-3xl text-gray-700 text-left'>Chirper</h4>
+                  <hr className='border-black mt-2 mb-4 w-1/4' />
+                  <h6 className='text-md'>A social networking service that allows users to post and interact with messages. Registered users can post and like chirps, but unregistered users can only read them.</h6>
+                  <div className='text-xl mt-4'>Tech Used</div>
+                  <div className='flex justify-center mt-4 text-4xl text-black'>
+                    <FaNodeJs className='mx-5' />
+                    <SiMongodb className='mx-5' />
+                    <SiRedis className='mx-5' />
+                    <SiBootstrap className='mx-5' />
+                  </div>
+                  <div className='text-lg mt-10'>Rendered with the Handlebars templating engine</div>
+                  <div className='text-lg'>Mongoose ODM Library</div>
+                  <div className='text-lg'>Authentication via Passport Google OAuth, Facebook and Twitter</div>
+                  <div className='text-lg'>Caching with Redis</div>
+                  <div className='text-lg'>Integration Testing with Jest and Puppeteer</div>
+                  <div className='text-lg'>Deployed with Heroku</div>
+                  {/* <SRLWrapper>
+                    <div className='md:flex mt-6'>
+                      <img role='button' className=' md:w-1/3 w-2/3 mb-10 md:mr-5 object-contain' src="/Register-Page.png" />
+                      <img role='button' className=' md:w-1/3 w-2/3 mb-10 md:mr-5 h-auto' src="/New-Dish-Page-(3).png" />
+                      <img role='button' className=' md:w-1/3 w-2/3 object-contain' src="/Smores.png" />
+                    </div>
+                  </SRLWrapper> */}
+                  <div className='flex flex-col md:flex-row text-2xl my-12 font-bold justify-center'>
+                    <a target='_blank' href='https://get-the-dish.herokuapp.com/' className='mr-20'>View Site</a>
+                    <a target='_blank' href='https://github.com/andkolbe/Chirper-Mongo' className='my-4 md:my-0 mr-20'>View Source Code</a>
                     <a target='_blank' href='' className='md:my-0'>Design Document</a>
                   </div>
                 </div>
@@ -257,7 +289,7 @@ export default function Home() {
 
 
         <div className='text-center bg-black py-4'>
-          <p className='text-gray-100'>Written in NextJS and Tailwind<a className='font-bold pl-10' target='_blank' href='https://github.com/andkolbe/Portfolio'> View Source Code </a></p>
+          <p className='text-gray-100'>Designed with NextJS and Tailwind<a className='font-bold pl-10' target='_blank' href='https://github.com/andkolbe/Portfolio'> View Source Code </a></p>
         </div>
 
 
