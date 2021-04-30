@@ -1,6 +1,6 @@
 import Head from 'next/head'; // Head is a React Component that is built into Next.js. It allows you to modify the <head> of a page.
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
-import { SiBootstrap, SiMongodb, SiMysql, SiRedis, SiTypescript } from 'react-icons/si';
+import { SiBootstrap, SiMongodb, SiMysql, SiRedis, SiSocketDotIo, SiTypescript } from 'react-icons/si';
 import { FaReact, FaNodeJs } from 'react-icons/fa';
 import SimpleReactLightbox from "simple-react-lightbox";
 import { SRLWrapper } from "simple-react-lightbox";
@@ -16,7 +16,7 @@ export default function Home() {
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
           <link rel="manifest" href="/site.webmanifest" />
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" />
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossOrigin="anonymous" />
 
         </Head>
 
@@ -116,20 +116,20 @@ export default function Home() {
                 <h2 className='text-lg font-semibold mb-2 text-center'>Tech I Am Currently Using</h2>
                 <div className='flex justify-center text-xl mb-10'>
                   <h6 className='mx-3'>Javascript</h6>
-                  <h6 className='mx-3'>Typescript</h6>
                   <h6 className='mx-3'>NodeJS</h6>
                   <h6 className='mx-3'>Express</h6>
                   <h6 className='mx-3'>MySQL</h6>
+                  <h6 className='mx-3'>PostgreSQL</h6>
                   <h6 className='mx-3'>MongoDB</h6>
+                  <h6 className='mx-3'>Redis</h6>
                   <h6 className='mx-3'>React</h6>
                 </div>
                 <h2 className='text-lg font-semibold mb-2 text-center'>Tech I Am Interested In Learning</h2>
                 <div className='flex justify-center text-xl mb-12'>
-                  <h6 className='mx-3'>PostgreSQL</h6>
-                  <h6 className='mx-3'>Redis</h6>
                   <h6 className='mx-3'>Go</h6>
-                  <h6 className='mx-3'>NextJS</h6>
+                  <h6 className='mx-3'>Microservices</h6>
                   <h6 className='mx-3'>JS Testing</h6>
+                  <h6 className='mx-3'>Kafka</h6>
                 </div>
 
               </div>
@@ -168,8 +168,9 @@ export default function Home() {
             <div className='flex flex-wrap items-center'>
               <div className='lg:w-3/5 md:px-4 px-2 ml-auto mr-auto md:pr-12'>
                 <h2 className='text-4xl font-semibold mb-20 text-center' data-aos='fade-left'>Projects</h2>
+
                 {/* Get The Dish */}
-                <div data-aos='fade-left'>
+                <div class='mb-40' data-aos='fade-left'>
                   <h4 className='text-3xl text-gray-700 text-left'>Get The Dish</h4>
                   <hr className='border-black mt-2 mb-4 w-1/4' />
                   <h6 className='text-md'>A social networking service that allows users to create a profile, upload photos and restaurant information, and post about their favorite dishes they've eaten recently. Users can leave likes and comments on other users' dishes.</h6>
@@ -184,7 +185,7 @@ export default function Home() {
                   <div className='text-lg mt-10'>Full stack CRUD application from scratch</div>
                   <div className='text-lg'>Images are hosted using AWS</div>
                   <div className='text-lg'>Comments are updated real time with Socket.IO</div>
-                  <div className='text-lg'>Authentication via Passport</div>
+                  <div className='text-lg'>Authentication via Passport JWT</div>
                   <div className='text-lg'>Integrated a custom password reset workflow</div>
                   <div className='text-lg'>3rd Party API integration with Stripe, Mailgun, and Yelp Fusion</div>
                   <div className='text-lg'>Deployed with Heroku</div>
@@ -201,12 +202,12 @@ export default function Home() {
                     <a target='_blank' href='' className='md:my-0'>Design Document</a>
                   </div>
                 </div>
-                {/* NEED A DIVIDER HERE */}
+
                 {/* Chirper */}
-                <div data-aos='fade-right'>
+                <div class='mb-40' data-aos='fade-right'>
                   <h4 className='text-3xl text-gray-700 text-left'>Chirper</h4>
                   <hr className='border-black mt-2 mb-4 w-1/4' />
-                  <h6 className='text-md'>A social networking service that allows users to post and interact with messages. Registered users can post and like chirps, but unregistered users can only read them.</h6>
+                  <h6 className='text-md'>A social networking service that allows users to post and interact with messages. Registered users can post chirps, but unregistered users can only read them.</h6>
                   <div className='text-xl mt-4'>Tech Used</div>
                   <div className='flex justify-center mt-4 text-4xl text-black'>
                     <FaNodeJs className='mx-5' />
@@ -216,6 +217,7 @@ export default function Home() {
                   </div>
                   <div className='text-lg mt-10'>Rendered with the Handlebars templating engine</div>
                   <div className='text-lg'>Mongoose ODM Library</div>
+                  <div className='text-lg'>Write about session storage</div>
                   <div className='text-lg'>Authentication via Passport Google OAuth, Facebook and Twitter</div>
                   <div className='text-lg'>Caching with Redis</div>
                   <div className='text-lg'>Integration Testing with Jest and Puppeteer</div>
@@ -233,6 +235,37 @@ export default function Home() {
                     <a target='_blank' href='' className='md:my-0'>Design Document</a>
                   </div>
                 </div>
+
+                {/* Strife */}
+                <div data-aos='fade-up'>
+                  <h4 className='text-3xl text-gray-700 text-left'>Strife</h4>
+                  <hr className='border-black mt-2 mb-4 w-1/4' />
+                  <h6 className='text-md'>A chatting app that allows users to join rooms and communicate in real time with their friends.</h6>
+                  <div className='text-xl mt-4'>Tech Used</div>
+                  <div className='flex justify-center mt-4 text-4xl text-black'>
+                    <FaNodeJs className='mx-5' />
+                    <SiRedis className='mx-5' />
+                    <SiSocketDotIo className='mx-5' />
+                  </div>
+                  <div className='text-lg mt-10'>Bidirectional Chatting with Socket.IO</div>
+                  <div className='text-lg'>Pub/Sub Integration with Redis</div>
+                  <div className='text-lg'>Deployed with Heroku</div>
+                  {/* <SRLWrapper>
+                    <div className='md:flex mt-6'>
+                      <img role='button' className=' md:w-1/3 w-2/3 mb-10 md:mr-5 object-contain' src="/Register-Page.png" />
+                      <img role='button' className=' md:w-1/3 w-2/3 mb-10 md:mr-5 h-auto' src="/New-Dish-Page-(3).png" />
+                      <img role='button' className=' md:w-1/3 w-2/3 object-contain' src="/Smores.png" />
+                    </div>
+                  </SRLWrapper> */}
+                  <div className='flex flex-col md:flex-row text-2xl my-12 font-bold justify-center'>
+                    <a target='_blank' href='https://get-the-dish.herokuapp.com/' className='mr-20'>View Site</a>
+                    <a target='_blank' href='https://github.com/andkolbe/strife' className='my-4 md:my-0 mr-20'>View Source Code</a>
+                    <a target='_blank' href='' className='md:my-0'>Design Document</a>
+                  </div>
+                </div>
+
+
+
               </div>
             </div>
           </div>
