@@ -1,6 +1,6 @@
 import Head from 'next/head'; // Head is a React Component that is built into Next.js. It allows you to modify the <head> of a page.
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
-import { SiBootstrap, SiMongodb, SiMysql, SiRedis, SiSocketDotIo, SiTypescript } from 'react-icons/si';
+import { SiBootstrap, SiDocker, SiGo, SiJavascript, SiMongodb, SiMysql, SiNextDotJs, SiPostgresql, SiRedis, SiTypescript } from 'react-icons/si';
 import { FaReact, FaNodeJs } from 'react-icons/fa';
 import SimpleReactLightbox from "simple-react-lightbox";
 import { SRLWrapper } from "simple-react-lightbox";
@@ -115,8 +115,8 @@ export default function Home() {
               <div className='lg:w-3/5 md:px-4 px-2 ml-auto mr-auto md:pr-12'>
                 <h2 className='text-xl lg:text-lg font-semibold mb-2 text-center'>Tech I Am Currently Using</h2>
                 <div className='flex justify-center text-2xl lg:text-xl mb-10'>
+                  <h6 className='mx-3'>Go</h6>
                   <h6 className='mx-3'>Javascript</h6>
-                  <h6 className='mx-3'>NodeJS</h6>
                   <h6 className='mx-3'>Express</h6>
                   <h6 className='mx-3'>MySQL</h6>
                   <h6 className='mx-3'>PostgreSQL</h6>
@@ -124,12 +124,11 @@ export default function Home() {
                   <h6 className='mx-3'>Redis</h6>
                   <h6 className='mx-3'>React</h6>
                 </div>
-                <h2 className='text-xl lg:text-lg font-semibold mb-2 text-center'>Tech I Am Interested In Learning</h2>
+                <h2 className='text-xl lg:text-lg font-semibold mb-2 text-center'>Topics I Am Interested In Learning More About</h2>
                 <div className='flex justify-center text-2xl lg:text-xl mb-12'>
-                  <h6 className='mx-3'>Go</h6>
                   <h6 className='mx-3'>Microservices</h6>
-                  <h6 className='mx-3'>JS Testing</h6>
                   <h6 className='mx-3'>Kafka</h6>
+                  <h6 className='mx-3'>Database Design</h6>
                 </div>
 
               </div>
@@ -182,6 +181,7 @@ export default function Home() {
                     <FaReact className='mx-5' />
                     <SiBootstrap className='mx-5' />
                   </div>
+                  
                   <div className='text-xl lg:text-lg mt-10'>Full stack CRUD application from scratch</div>
                   <div className='text-xl lg:text-lg'>Images are hosted using AWS</div>
                   <div className='text-xl lg:text-lg'>Comments are updated real time with Socket.IO</div>
@@ -203,6 +203,63 @@ export default function Home() {
                   </div>
                 </div>
 
+                {/* Go Websockets */}
+                <div class='mb-40' data-aos='fade-right'>
+                  <h4 className='text-4xl lg:text-3xl text-gray-700 text-left'>Go Websockets</h4>
+                  <hr className='border-black mt-2 mb-4 w-1/4' />
+                  <h6 className='text-lg lg:text-md'>A chat room app that lets users sign up and chat with their friends in real time</h6>
+                  <div className='text-2xl lg:text-xl mt-4'>Tech Used</div>
+                  <div className='flex justify-center mt-4 text-5xl lg:text-4xl text-black'>
+              
+                    <SiGo className='mx-5' />
+                    <SiJavascript className='mx-5' />
+                    <SiMysql className='mx-5' />
+                    {/* <SiRedis className='mx-5' /> */}
+                    <SiBootstrap className='mx-5' />
+                  </div>
+                  
+                  <div className='text-xl lg:text-lg mt-10'>Backend written in Go</div>
+                  <div className='text-xl lg:text-lg'>Frontend written in Javascript</div>
+                  <div className='text-xl lg:text-lg'>Unit and Table Tests</div>
+                  <div className='text-xl lg:text-lg'>Websockets implemented with Gorilla Websockets</div>
+                  <div className='text-xl lg:text-lg'>Users and Sessions saved in MySQL</div>
+                  <div className='text-xl lg:text-lg'>Deployed with Heroku</div>
+                  
+                  <div className='flex flex-col md:flex-row text-3xl lg:text-2xl my-12 font-bold justify-center'>
+                    <a target='_blank' href='https://go-websocket.herokuapp.com/' className='mr-20'>View Site</a>
+                    <a target='_blank' href='https://github.com/andkolbe/go-websockets' className='my-10 md:my-0 mr-20'>View Source Code</a>
+                    <a target='_blank' href='' className='md:my-0'>Design Document</a>
+                  </div>
+                </div>
+
+
+                {/* Get The Tix */}
+                <div class='mb-40' data-aos='fade-left'>
+                  <h4 className='text-4xl lg:text-3xl text-gray-700 text-left'>Get The Tix</h4>
+                  <hr className='border-black mt-2 mb-4 w-1/4' />
+                  <h6 className='text-lg lg:text-md'>Blah.</h6>
+                  <div className='text-2xl lg:text-xl mt-4'>Tech Used</div>
+                  <div className='flex justify-center mt-4 text-5xl lg:text-4xl text-black'>
+                    <SiTypescript className='mx-5' />
+                    <FaNodeJs className='mx-5' />
+                    <SiMongodb className='mx-5' />
+                    <SiRedis className='mx-5' />
+                    <SiNextDotJs className='mx-5' />
+                    <SiDocker className='mx-5' />
+                    <SiBootstrap className='mx-5' />
+                  </div>
+                  <div className='text-xl lg:text-lg mt-10'>Full stack Microservices application</div>
+                  <div className='text-xl lg:text-lg'>Written in NextJS and Express</div>
+                  <div className='text-xl lg:text-lg'>Testing</div>
+                  <div className='text-xl lg:text-lg'>Deployed with Heroku</div>
+                  
+                  <div className='flex flex-col md:flex-row text-3xl lg:text-2xl my-12 font-bold justify-center'>
+                    <a target='_blank' href='' className='mr-20'>View Site</a>
+                    <a target='_blank' href='https://github.com/andkolbe/get-the-tix' className='my-10 md:my-0 mr-20'>View Source Code</a>
+                    <a target='_blank' href='' className='md:my-0'>Design Document</a>
+                  </div>
+                </div>
+
                 {/* Chirper */}
                 <div class='mb-40' data-aos='fade-right'>
                   <h4 className='text-4xl lg:text-3xl text-gray-700 text-left'>Chirper</h4>
@@ -215,54 +272,21 @@ export default function Home() {
                     <SiRedis className='mx-5' />
                     <SiBootstrap className='mx-5' />
                   </div>
-                  <div className='text-xl lg:text-lg mt-10'>Rendered with the Handlebars templating engine</div>
-                  <div className='text-xl lg:text-lg'>Mongoose ODM Library</div>
-                  <div className='text-xl lg:text-lg'>Write about session storage</div>
-                  <div className='text-xl lg:text-lg'>Authentication via Passport Google OAuth, Facebook and Twitter</div>
+                  <div className='text-xl lg:text-lg mt-10'>Mongoose ODM Library</div>
+                  <div className='text-xl lg:text-lg'>Sessions stored on MongoDB Atlas</div>
+                  <div className='text-xl lg:text-lg'>Authentication via Passport Google and Twitter OAuth</div>
                   <div className='text-xl lg:text-lg'>Caching with Redis</div>
                   <div className='text-xl lg:text-lg'>Integration Testing with Jest and Puppeteer</div>
                   <div className='text-xl lg:text-lg'>Deployed with Heroku</div>
-                  {/* <SRLWrapper>
-                    <div className='md:flex mt-6'>
-                      <img role='button' className=' md:w-1/3 w-2/3 mb-10 md:mr-5 object-contain' src="/Register-Page.png" />
-                      <img role='button' className=' md:w-1/3 w-2/3 mb-10 md:mr-5 h-auto' src="/New-Dish-Page-(3).png" />
-                      <img role='button' className=' md:w-1/3 w-2/3 object-contain' src="/Smores.png" />
-                    </div>
-                  </SRLWrapper> */}
+                  
                   <div className='flex flex-col md:flex-row text-3xl lg:text-2xl my-12 font-bold justify-center'>
-                    <a target='_blank' href='https://get-the-dish.herokuapp.com/' className='mr-20'>View Site</a>
+                    <a target='_blank' href='https://chirper-handlebars.herokuapp.com/' className='mr-20'>View Site</a>
                     <a target='_blank' href='https://github.com/andkolbe/Chirper-Mongo' className='my-4 md:my-0 mr-20'>View Source Code</a>
                     <a target='_blank' href='' className='md:my-0'>Design Document</a>
                   </div>
                 </div>
 
-                {/* Strife */}
-                <div data-aos='fade-up'>
-                  <h4 className='text-4xl lg:text-3xl text-gray-700 text-left'>Strife</h4>
-                  <hr className='border-black mt-2 mb-4 w-1/4' />
-                  <h6 className='text-lg lg:text-md'>A chatting app that allows users to join rooms and communicate in real time with their friends.</h6>
-                  <div className='text-2xl lg:text-xl mt-4'>Tech Used</div>
-                  <div className='flex justify-center mt-4 text-5xl lg:text-4xl text-black'>
-                    <FaNodeJs className='mx-5' />
-                    <SiRedis className='mx-5' />
-                    <SiSocketDotIo className='mx-5' />
-                  </div>
-                  <div className='text-xl lg:text-lg mt-10'>Bidirectional Chatting with Socket.IO</div>
-                  <div className='text-xl lg:text-lg'>Pub/Sub Integration with Redis</div>
-                  <div className='text-xl lg:text-lg'>Deployed with Heroku</div>
-                  {/* <SRLWrapper>
-                    <div className='md:flex mt-6'>
-                      <img role='button' className=' md:w-1/3 w-2/3 mb-10 md:mr-5 object-contain' src="/Register-Page.png" />
-                      <img role='button' className=' md:w-1/3 w-2/3 mb-10 md:mr-5 h-auto' src="/New-Dish-Page-(3).png" />
-                      <img role='button' className=' md:w-1/3 w-2/3 object-contain' src="/Smores.png" />
-                    </div>
-                  </SRLWrapper> */}
-                  <div className='flex flex-col md:flex-row text-3xl lg:text-2xl my-12 font-bold justify-center'>
-                    <a target='_blank' href='https://get-the-dish.herokuapp.com/' className='mr-20'>View Site</a>
-                    <a target='_blank' href='https://github.com/andkolbe/strife' className='my-4 md:my-0 mr-20'>View Source Code</a>
-                    <a target='_blank' href='' className='md:my-0'>Design Document</a>
-                  </div>
-                </div>
+                
 
 
 
