@@ -51,26 +51,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          {/* Polygon */}
-          <div
-            className='absolute bottom-0 left-0 right-0 top-auto w-full -mt-20 overflow-hidden pointer-events-none'
-            style={{ height: '80px', transform: 'translateZ(0)' }}
-          >
-            <svg
-              className='absolute bottom-0 overflow-hidden'
-              xmlns='http://www.w3.org/2000/svg'
-              preserveAspectRatio='none'
-              version='1.1'
-              viewBox='0 0 2560 100'
-              x='0'
-              y='0'
-            >
-              <polygon
-                className='text-gray-300 fill-current'
-                points='2560 0 2560 100 0 100'
-              ></polygon>
-            </svg>
-          </div>
+          
         </div>
 
         {/* About Me */}
@@ -197,7 +178,7 @@ export default function Home() {
                 </div>
 
                 {/* Get The Tix */}
-                <div class='mb-40' data-aos='fade-left'>
+                <div class='mb-40' data-aos='fade-right'>
                   <h4 className='text-4xl lg:text-3xl text-gray-700 text-left'>Get The Tix</h4>
                   <hr className='border-black mt-2 mb-4 w-1/4' />
                   <h6 className='text-lg lg:text-md'>A ticket exchange and resell app that allows users to sign up, and sell and buy tickets to events</h6>
@@ -226,7 +207,7 @@ export default function Home() {
                 </div>
 
                 {/* Go Websockets */}
-                <div className='mb-40' data-aos='fade-right'>
+                <div className='mb-40' data-aos='fade-left'>
                   <h4 className='text-4xl lg:text-3xl text-gray-700 text-left'>Go Websockets</h4>
                   <hr className='border-black mt-2 mb-4 w-1/4' />
                   <h6 className='text-lg lg:text-md'>A chat room app that lets users sign up and chat with their friends in real time using Websockets</h6>
