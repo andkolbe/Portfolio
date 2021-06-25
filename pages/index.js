@@ -3,7 +3,6 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 import { SiBootstrap, SiDocker, SiGo, SiJavascript, SiMongodb, SiMysql, SiNextDotJs, SiPostgresql, SiRedis, SiTypescript } from 'react-icons/si';
 import { FaReact, FaNodeJs } from 'react-icons/fa';
 import SimpleReactLightbox from "simple-react-lightbox";
-import { SRLWrapper } from "simple-react-lightbox";
 
 export default function Home() {
   return (
@@ -46,7 +45,7 @@ export default function Home() {
                     Andrew Kolbe
                   </h1>
                   <p className='mt-4 text-gray-100 text-3xl lg:text-2xl'>
-                    Web Developer | Birmingham, AL
+                    Back End Web Developer | Birmingham, AL
               </p>
                 </div>
               </div>
@@ -87,17 +86,17 @@ export default function Home() {
                   Hello! I'm Andrew, a pastry chef turned web developer from Texas who recently moved to Birmingham.
           </p>
                 <p className='mt-4 mb-4 text-xl lg:text-lg leading-relaxed text-gray-900'>
-                  I specialize in full stack Javascript development and am interested in learning more about all things server side development.
+                  I specialize in Javascript and Go and am interested in learning more about all things server side development.
           </p>
                 <p className='mt-0 mb-4 text-xl lg:text-lg leading-relaxed text-gray-900'>
-                  I have years of experience working in high stress, team focused, and technically challenging environments. I love growing with and learning from a team and helping other motivated people reach their potential.
+                  I have years of experience working in high stress, collaborative, and technically challenging environments. I love growing with and learning from a team and helping other motivated people reach their potential.
           </p>
                 <p className='mt-0 mb-4 text-xl lg:text-lg leading-relaxed text-gray-900'>
                   In my free time, I enjoy cooking and learning about new cuisines and cultures, listening to obscure metal, and spending time with my lazy dog.
           </p>
-                <p className='mt-0 mb-4 text-xl lg:text-lg text-center md:text-left leading-relaxed font-bold text-gray-900'>
-                  View Resume
-          </p>
+                
+          <a target='_blank' href='https://ak-portfolio.s3.amazonaws.com/Web+Developer+Resume.pdf' className='mt-0 mb-4 text-xl lg:text-lg text-center md:text-left leading-relaxed font-bold text-gray-900'>View Resume</a>
+
               </div>
               {/* My Picture */}
               <div className='px-4 pt-4 ml-auto mr-auto xl:w-1/3 lg:w-2/5 w-2/3' data-aos='fade-left'>
@@ -121,14 +120,14 @@ export default function Home() {
                   <h6 className='mx-3'>MySQL</h6>
                   <h6 className='mx-3'>PostgreSQL</h6>
                   <h6 className='mx-3'>MongoDB</h6>
-                  <h6 className='mx-3'>Redis</h6>
                   <h6 className='mx-3'>React</h6>
                 </div>
                 <h2 className='text-xl lg:text-lg font-semibold mb-2 text-center'>Topics I Am Interested In Learning More About</h2>
                 <div className='flex justify-center text-2xl lg:text-xl mb-12'>
                   <h6 className='mx-3'>Microservices</h6>
-                  <h6 className='mx-3'>Kafka</h6>
+                  <h6 className='mx-3'>Pub Sub</h6>
                   <h6 className='mx-3'>Database Design</h6>
+                  <h6 className='mx-3'>Redis</h6>
                 </div>
 
               </div>
@@ -189,55 +188,19 @@ export default function Home() {
                   <div className='text-xl lg:text-lg'>Integrated a custom password reset workflow</div>
                   <div className='text-xl lg:text-lg'>3rd Party API integration with Stripe, Mailgun, and Yelp Fusion</div>
                   <div className='text-xl lg:text-lg'>Deployed with Heroku</div>
-                  {/* <SRLWrapper>
-                    <div className='md:flex mt-6'>
-                      <img role='button' className=' md:w-1/3 w-2/3 mb-10 md:mr-5 object-contain' src="/Register-Page.png" />
-                      <img role='button' className=' md:w-1/3 w-2/3 mb-10 md:mr-5 h-auto' src="/New-Dish-Page-(3).png" />
-                      <img role='button' className=' md:w-1/3 w-2/3 object-contain' src="/Smores.png" />
-                    </div>
-                  </SRLWrapper> */}
+                  
                   <div className='flex flex-col md:flex-row text-3xl lg:text-2xl my-12 font-bold justify-center'>
                     <a target='_blank' href='https://get-the-dish.herokuapp.com/' className='mr-20'>View Site</a>
                     <a target='_blank' href='https://github.com/andkolbe/get-the-dish' className='my-10 md:my-0 mr-20'>View Source Code</a>
-                    <a target='_blank' href='' className='md:my-0'>Design Document</a>
+                    <a target='_blank' href='https://ak-portfolio.s3.amazonaws.com/Get-The-Dish-Design-Document.pdf' className='md:my-0'>Design Document</a>
                   </div>
                 </div>
-
-                {/* Go Websockets */}
-                <div class='mb-40' data-aos='fade-right'>
-                  <h4 className='text-4xl lg:text-3xl text-gray-700 text-left'>Go Websockets</h4>
-                  <hr className='border-black mt-2 mb-4 w-1/4' />
-                  <h6 className='text-lg lg:text-md'>A chat room app that lets users sign up and chat with their friends in real time</h6>
-                  <div className='text-2xl lg:text-xl mt-4'>Tech Used</div>
-                  <div className='flex justify-center mt-4 text-5xl lg:text-4xl text-black'>
-              
-                    <SiGo className='mx-5' />
-                    <SiJavascript className='mx-5' />
-                    <SiMysql className='mx-5' />
-                    {/* <SiRedis className='mx-5' /> */}
-                    <SiBootstrap className='mx-5' />
-                  </div>
-                  
-                  <div className='text-xl lg:text-lg mt-10'>Backend written in Go</div>
-                  <div className='text-xl lg:text-lg'>Frontend written in Javascript</div>
-                  <div className='text-xl lg:text-lg'>Unit and Table Tests</div>
-                  <div className='text-xl lg:text-lg'>Websockets implemented with Gorilla Websockets</div>
-                  <div className='text-xl lg:text-lg'>Users and Sessions saved in MySQL</div>
-                  <div className='text-xl lg:text-lg'>Deployed with Heroku</div>
-                  
-                  <div className='flex flex-col md:flex-row text-3xl lg:text-2xl my-12 font-bold justify-center'>
-                    <a target='_blank' href='https://go-websocket.herokuapp.com/' className='mr-20'>View Site</a>
-                    <a target='_blank' href='https://github.com/andkolbe/go-websockets' className='my-10 md:my-0 mr-20'>View Source Code</a>
-                    <a target='_blank' href='' className='md:my-0'>Design Document</a>
-                  </div>
-                </div>
-
 
                 {/* Get The Tix */}
                 <div class='mb-40' data-aos='fade-left'>
                   <h4 className='text-4xl lg:text-3xl text-gray-700 text-left'>Get The Tix</h4>
                   <hr className='border-black mt-2 mb-4 w-1/4' />
-                  <h6 className='text-lg lg:text-md'>Blah.</h6>
+                  <h6 className='text-lg lg:text-md'>A ticket exchange and resell app that allows users to sign up, and sell and buy tickets to events</h6>
                   <div className='text-2xl lg:text-xl mt-4'>Tech Used</div>
                   <div className='flex justify-center mt-4 text-5xl lg:text-4xl text-black'>
                     <SiTypescript className='mx-5' />
@@ -250,17 +213,49 @@ export default function Home() {
                   </div>
                   <div className='text-xl lg:text-lg mt-10'>Full stack Microservices application</div>
                   <div className='text-xl lg:text-lg'>Written in NextJS and Express</div>
-                  <div className='text-xl lg:text-lg'>Testing</div>
-                  <div className='text-xl lg:text-lg'>Deployed with Heroku</div>
+                  <div className='text-xl lg:text-lg'>Services are managed using Docker, Kubernetes, Ingress Nginx, and NATS Streaming Server</div>
+                  <div className='text-xl lg:text-lg'>3rd Party API integration with Stripe</div>
+                  <div className='text-xl lg:text-lg'>All services tested with Jest</div>
+                  <div className='text-xl lg:text-lg'>Deployed</div>
                   
                   <div className='flex flex-col md:flex-row text-3xl lg:text-2xl my-12 font-bold justify-center'>
                     <a target='_blank' href='' className='mr-20'>View Site</a>
                     <a target='_blank' href='https://github.com/andkolbe/get-the-tix' className='my-10 md:my-0 mr-20'>View Source Code</a>
-                    <a target='_blank' href='' className='md:my-0'>Design Document</a>
+                    <a target='_blank' href='https://ak-portfolio.s3.amazonaws.com/Get-The-Tix-Design-Document.pdf' className='md:my-0'>Design Document</a>
                   </div>
                 </div>
 
-                {/* Chirper */}
+                {/* Go Websockets */}
+                <div className='mb-40' data-aos='fade-right'>
+                  <h4 className='text-4xl lg:text-3xl text-gray-700 text-left'>Go Websockets</h4>
+                  <hr className='border-black mt-2 mb-4 w-1/4' />
+                  <h6 className='text-lg lg:text-md'>A chat room app that lets users sign up and chat with their friends in real time using Websockets</h6>
+                  <div className='text-2xl lg:text-xl mt-4'>Tech Used</div>
+                  <div className='flex justify-center mt-4 text-5xl lg:text-4xl text-black'>
+              
+                    <SiGo className='mx-5' />
+                    <SiJavascript className='mx-5' />
+                    <SiMysql className='mx-5' />
+                    <SiBootstrap className='mx-5' />
+                  </div>
+                  
+                  <div className='text-xl lg:text-lg mt-10'>Backend written in Go</div>
+                  <div className='text-xl lg:text-lg'>Frontend written in Javascript</div>
+                  <div className='text-xl lg:text-lg'>Unit and Table Tests in all packages</div>
+                  <div className='text-xl lg:text-lg'>Websockets implemented with Gorilla Websockets</div>
+                  <div className='text-xl lg:text-lg'>Users and Sessions saved in MySQL</div>
+                  <div className='text-xl lg:text-lg'>Deployed with Heroku</div>
+                  
+                  <div className='flex flex-col md:flex-row text-3xl lg:text-2xl my-12 font-bold justify-center'>
+                    <a target='_blank' href='https://go-websocket.herokuapp.com/' className='mr-20'>View Site</a>
+                    <a target='_blank' href='https://github.com/andkolbe/go-websockets' className='my-10 md:my-0 mr-20'>View Source Code</a>
+                    <a target='_blank' href='https://ak-portfolio.s3.amazonaws.com/Go-Websockets-Design-Document.pdf' className='md:my-0'>Design Document</a>
+                  </div>
+                </div>
+
+
+                
+                {/* Chirper
                 <div class='mb-40' data-aos='fade-right'>
                   <h4 className='text-4xl lg:text-3xl text-gray-700 text-left'>Chirper</h4>
                   <hr className='border-black mt-2 mb-4 w-1/4' />
@@ -284,7 +279,7 @@ export default function Home() {
                     <a target='_blank' href='https://github.com/andkolbe/Chirper-Mongo' className='my-4 md:my-0 mr-20'>View Source Code</a>
                     <a target='_blank' href='' className='md:my-0'>Design Document</a>
                   </div>
-                </div>
+                </div> */}
 
                 
 
