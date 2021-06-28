@@ -67,7 +67,7 @@ export default function Home() {
                   Hello! I'm Andrew, a pastry chef turned web developer from Texas who recently moved to Birmingham.
           </p>
                 <p className='mt-4 mb-4 text-xl lg:text-lg leading-relaxed text-gray-900'>
-                  I specialize in Javascript and Go and am interested in learning more about all things server side development.
+                  I specialize in Javascript and Go, and I am interested in learning more about all things server side development.
           </p>
                 <p className='mt-0 mb-4 text-xl lg:text-lg leading-relaxed text-gray-900'>
                   I have years of experience working in high stress, collaborative, and technically challenging environments. I love growing with and learning from a team and helping other motivated people reach their potential.
@@ -197,10 +197,10 @@ export default function Home() {
                   <div className='text-xl lg:text-lg'>Services are managed using Docker, Kubernetes, Ingress Nginx, and NATS Streaming Server</div>
                   <div className='text-xl lg:text-lg'>3rd Party API integration with Stripe</div>
                   <div className='text-xl lg:text-lg'>All services tested with Jest</div>
-                  <div className='text-xl lg:text-lg'>Deployed</div>
+                  <div className='text-xl lg:text-lg'>Deployed with Digital Ocean</div>
                   
                   <div className='flex flex-col md:flex-row text-3xl lg:text-2xl my-12 font-bold justify-center'>
-                    <a target='_blank' href='' className='mr-20'>View Site</a>
+                    <a target='_blank' href='http://www.get-the-tix.xyz/' className='mr-20'>View Site</a>
                     <a target='_blank' href='https://github.com/andkolbe/get-the-tix' className='my-10 md:my-0 mr-20'>View Source Code</a>
                     <a target='_blank' href='https://ak-portfolio.s3.amazonaws.com/Get-The-Tix-Design-Document.pdf' className='md:my-0'>Design Document</a>
                   </div>
