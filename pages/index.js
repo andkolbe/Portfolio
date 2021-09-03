@@ -216,7 +216,7 @@ export default function Home() {
               
                     <SiGo className='mx-5' />
                     <SiJavascript className='mx-5' />
-                    <SiMysql className='mx-5' />
+                    <SiPostgresql className='mx-5' />
                     <SiBootstrap className='mx-5' />
                   </div>
                   
@@ -224,7 +224,7 @@ export default function Home() {
                   <div className='text-xl lg:text-lg'>Frontend written in Javascript</div>
                   <div className='text-xl lg:text-lg'>Unit and Table Tests in all packages</div>
                   <div className='text-xl lg:text-lg'>Websockets implemented with Gorilla Websockets</div>
-                  <div className='text-xl lg:text-lg'>Users and Sessions saved in MySQL</div>
+                  <div className='text-xl lg:text-lg'>Users saved in Postgres</div>
                   <div className='text-xl lg:text-lg'>Deployed with Heroku</div>
                   
                   <div className='flex flex-col md:flex-row text-3xl lg:text-2xl my-12 font-bold justify-center'>
