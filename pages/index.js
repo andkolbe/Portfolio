@@ -1,12 +1,11 @@
 import Head from 'next/head'; // Head is a React Component that is built into Next.js. It allows you to modify the <head> of a page.
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
-import { SiBootstrap, SiDocker, SiGo, SiJavascript, SiMongodb, SiMysql, SiNextDotJs, SiPostgresql, SiRedis, SiTypescript } from 'react-icons/si';
+import { SiBootstrap, SiDocker, SiFlask, SiGo, SiJavascript, SiMongodb, SiMysql, SiNextDotJs, SiPostgresql, SiPython, SiRedis, SiTypescript } from 'react-icons/si';
 import { FaReact, FaNodeJs } from 'react-icons/fa';
-import SimpleReactLightbox from "simple-react-lightbox";
 
 export default function Home() {
   return (
-    <SimpleReactLightbox>
+    
       <main className="absolute md:relative">
 
         <Head>
@@ -236,31 +235,27 @@ export default function Home() {
 
 
                 
-                {/* Chirper
+                {/* Python Blog */}
                 <div class='mb-40' data-aos='fade-right'>
-                  <h4 className='text-4xl lg:text-3xl text-gray-700 text-left'>Chirper</h4>
+                  <h4 className='text-4xl lg:text-3xl text-gray-700 text-left'>Python Blog</h4>
                   <hr className='border-black mt-2 mb-4 w-1/4' />
-                  <h6 className='text-lg lg:text-md'>A social networking service that allows users to post and interact with messages. Registered users can post chirps, but unregistered users can only read them.</h6>
+                  <h6 className='text-lg lg:text-md'>A social networking service that allows users to post and interact with messages. Registered users can post comment, and like messages.</h6>
                   <div className='text-2xl lg:text-xl mt-4'>Tech Used</div>
                   <div className='flex justify-center mt-4 text-5xl lg:text-4xl text-black'>
-                    <FaNodeJs className='mx-5' />
-                    <SiMongodb className='mx-5' />
-                    <SiRedis className='mx-5' />
+                    <SiPython className='mx-5' />
+                    <SiFlask className='mx-5' />
+                    <SiPostgresql className='mx-5' />
                     <SiBootstrap className='mx-5' />
                   </div>
-                  <div className='text-xl lg:text-lg mt-10'>Mongoose ODM Library</div>
-                  <div className='text-xl lg:text-lg'>Sessions stored on MongoDB Atlas</div>
-                  <div className='text-xl lg:text-lg'>Authentication via Passport Google and Twitter OAuth</div>
-                  <div className='text-xl lg:text-lg'>Caching with Redis</div>
-                  <div className='text-xl lg:text-lg'>Integration Testing with Jest and Puppeteer</div>
+                  <div className='text-xl lg:text-lg mt-10'>Full stack CRUD app using the Flask Python framework</div>
+                  <div className='text-xl lg:text-lg'>Users and Sessions stored in a Postgres Database</div>
                   <div className='text-xl lg:text-lg'>Deployed with Heroku</div>
                   
                   <div className='flex flex-col md:flex-row text-3xl lg:text-2xl my-12 font-bold justify-center'>
-                    <a target='_blank' href='https://chirper-handlebars.herokuapp.com/' className='mr-20'>View Site</a>
-                    <a target='_blank' href='https://github.com/andkolbe/Chirper-Mongo' className='my-4 md:my-0 mr-20'>View Source Code</a>
-                    <a target='_blank' href='' className='md:my-0'>Design Document</a>
+                    <a target='_blank' href='https://flask-py-blog.herokuapp.com/' className='mr-20'>View Site</a>
+                    <a target='_blank' href='https://github.com/andkolbe/python-blog' className='my-4 md:my-0 mr-20'>View Source Code</a>
                   </div>
-                </div> */}
+                </div>
 
                 
 
@@ -327,7 +322,7 @@ export default function Home() {
 
 
       </main>
-    </SimpleReactLightbox>
+    
   );
 }
 
